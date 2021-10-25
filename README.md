@@ -24,4 +24,11 @@
 ## Test
 - Run ```yarn test or npm run test```
 - Test folder locate at `src\server\test\index.test.js`
-
+## Images
+- Server
+![image description](https://github.com/dim0147/Svested-Interview-Project/blob/master/images/sv1.png?raw=true)
+![image description](https://github.com/dim0147/Svested-Interview-Project/blob/master/images/sv2.png?raw=true)
+![image description](https://github.com/dim0147/Svested-Interview-Project/blob/master/images/sv3.png?raw=true)
+![image description](https://github.com/dim0147/Svested-Interview-Project/blob/master/images/sv4.png?raw=true)
+- Client
+![image description](https://github.com/dim0147/Svested-Interview-Project/blob/master/images/c1.png?raw=true)
