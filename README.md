@@ -14,7 +14,7 @@
 - Run ```yarn install (or npm install)```
 - If using docker, run ```docker-compose up``` to start MySql database in docker container, if don't have go to ```src\server\config\config.json``` to config the database
 - Type ```cd src/server``` and run ```npx sequelize db:migrate```
-- Run ```npx sequelize db:seed``` to seed the data
+- Run ```npx sequelize db:seed:all``` to seed the data
 - Run ```yarn dev (or npm run dev)``` to start developement environment
 
 ## Config 
