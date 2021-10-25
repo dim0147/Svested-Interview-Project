@@ -1,23 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './app.css';
-import ReactImage from './react.png';
 
-export default class App extends Component {
-  state = { username: null };
+import PieChart from './PieChart';
+import BarChart from './BarChart';
+import AddNewPerson from './AddNewPerson';
 
-  componentDidMount() {
-    fetch('/api/getUsername')
-      .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));
-  }
+export default function App() {
+    const [keyComponent, setKeyComponent] = React.useState(1);
 
-  render() {
-    const { username } = this.state;
+    const onReRenderComponent = () => setKeyComponent((key) => key + 1);
+
     return (
-      <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
-      </div>
+        <div className='container'>
+            <PieChart key={keyComponent} />
+            <BarChart key={keyComponent + 1} />
+            <AddNewPerson onReRenderComponent={onReRenderComponent} />
+        </div>
     );
-  }
 }
